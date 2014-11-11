@@ -1,0 +1,25 @@
+CHANGELOG
+-- Magazino Child Theme for Glass City
+
+v3 -- Nov 11, 2014
+- Added support for displaying post format (using Genericons) in post boxes on homepage and on archive pages.
+- Centered header logo image.
+- Fixed layout resizing issues on mobile screens with 346px < width < 387px.
+- Increased post box height.
+- Include sticky posts in post list.
+
+v2
+- Created custom post boxes:
+	- Before hover (front to back):
+		*Category (links to Category page)
+		*Title (expanded text size)
+		*Image (slightly faded)
+	- During hover (front to back):
+		*Category
+		*Title
+		*Content (fades in)
+		*Image (fades more)	
+- Incorporated changes to the footer in the parent Magazino theme (copyright blurb).
+
+v1
+- Created blank working child theme.

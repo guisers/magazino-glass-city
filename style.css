@@ -1,0 +1,138 @@
+/*
+ Theme Name:   Magazino Child
+ Theme URI:    http://wpdevshed.com/magazino-theme/
+ Description:  Child of WP's Magazino theme for Glass City
+ Author:       Crystal and Kayla
+ Author URI:   http://github.com/guisers
+ Template:     magazino
+ Version:      3.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  magazino-child
+*/
+
+
+/* CENTER THE HEADER LOGO */
+
+#inner-header {
+	width: 100%;
+}
+
+#social-media {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	margin-top: 20px;
+	z-index: 200;
+}
+
+
+#site-heading {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    float: none;
+    z-index: 100;
+}
+
+#site-logo {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+#site-logo img {
+	top: 0px;
+}
+
+
+/* CUSTOM POST BOXES */
+
+article[id*=post-].post-box {
+	height: 200px;
+}
+
+.entry-meta {
+	text-transform: uppercase;
+}
+
+article[id*=post-].post-box .entry-header {
+	position: relative;
+	z-index: 100;
+	text-align: center;
+}
+
+article[id*=post-].post-box .entry-title {
+	font-size: 1.5em;
+}
+
+article[id*=post-].post-box .entry-content {
+	position: relative;
+	z-index: 200;
+	display: none;
+}
+
+.go-button a,
+.go-button a:visited {
+	z-index: 200;
+	display: none;
+	width: 30px;
+	height: 30px;
+	right: 9px;
+	bottom: 9px;
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.post-box-img img {
+	z-index: 0;
+	opacity: 0.7;
+	filter: alpha(opacity=07); /* For IE8 and earlier */
+}
+
+
+
+/* MOBILE STYLES */
+
+@media only screen and (max-width: 1036px) {
+	#site-logo {
+		width: 65%;
+	}
+}
+
+@media only screen and (max-width: 976px) {
+	#site-logo {
+		width: 75%;
+	}
+}
+
+@media only screen and (max-width: 824px) {
+	#site-logo {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 746px) {
+	#site-logo {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 667px) {
+	#site-logo {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 387px) {
+	
+	article[id*=post-].post-box {
+		width: 85%;
+		margin-right: 0;
+	}
+	
+	#search-box  #s {
+		min-width: 130px;
+		max-width: 130px;	
+	}
+}
