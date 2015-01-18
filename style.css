@@ -5,7 +5,7 @@
  Author:       Crystal and Kayla
  Author URI:   http://github.com/guisers
  Template:     magazino
- Version:      1.0.0
+ Version:      5.0.0
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  magazino-child
 */
@@ -84,9 +84,9 @@ article[id*=post-].post-box .entry-content {
 }
 
 .go-button span {
-	font-size: 25px;
+	font-size: 24px;
 	vertical-align: inherit;
-	margin: inherit;
+	line-height: inherit;
 }
 
 .post-box-img img {
@@ -142,7 +142,9 @@ article[id*=post-].post-box .entry-content {
 @media only screen and (max-width: 667px) {
 	#site-logo {
 		width: 100%;
-		margin-top: 25px;
+	}
+	#site-logo, #site-title {
+		margin-top: 55px;
 	}
 	.menu.nav-mobile {
 		position: fixed;
@@ -150,9 +152,14 @@ article[id*=post-].post-box .entry-content {
 		left: 0px;
 		width: 100%;
 		z-index: 400;
+		height: 60px;
+	}
+	#menu-icon span {
+		line-height: 40px;
+		font-size: 18px;
 	}
 	#search-box-wrap {
-		padding-top: 36px;
+		padding-top: 56px;
 	}
 	#social-media {
 		position: fixed;
@@ -164,10 +171,13 @@ article[id*=post-].post-box .entry-content {
 		box-shadow: none;
 		background-color: transparent!important;
 		padding-top: 6px;
+		height: 50px;
+		width: 40px;
 	}
 	#search-icon {
 		box-shadow: none;
-		height: 40px;
+		height: 60px;
+		width: 60px;
 	}
 }
 
