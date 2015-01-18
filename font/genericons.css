@@ -39,20 +39,20 @@
 .genericon {
 	/*font-size: 16px;
 	vertical-align: top;
-	text-align: center;*/
+	text-align: center;
 	-moz-transition: color .1s ease-in 0;
 	-webkit-transition: color .1s ease-in 0;
-	/*display: inline-block;*/
+	display: inline-block;*/
 	font-family: "Genericons";
-	font-style: normal;
+	/*font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
-	/*line-height: 1;*/
+	line-height: 1;
 	text-decoration: inherit;
 	text-transform: none;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	speak: none;
+	speak: none;*/
 }
 
 

@@ -7,11 +7,29 @@
             <?php the_category(' &bull; '); ?>
         </div><!-- .entry-meta -->
         <?php endif; ?>
-        <h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'magazino' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>		
+        <h2 class="entry-title">
+            <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'magazino' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
+                <?php 
+                    $yoast_title = get_post_meta($post->ID, '_yoast_wpseo_title', true);
+                    if ($yoast_title) {
+                        echo $yoast_title;
+                    } else {
+                        echo the_title();
+                    } 
+                ?>
+            </a>
+        </h2>		
     </header><!-- .entry-header -->
     
     <div class="entry-content post_content">
-        <?php echo magazino_excerpt(12); ?>
+        <?php
+            $yoast_meta = get_post_meta($post->ID, '_yoast_wpseo_metadesc', true);
+            if ($yoast_meta) {
+                echo $yoast_meta;
+            } else {
+                echo magazino_excerpt(12);    
+            }
+        ?>
     </div><!-- .entry-content -->
     
     <div class="go-button"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'magazino' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">

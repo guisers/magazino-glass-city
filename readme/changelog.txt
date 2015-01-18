@@ -1,6 +1,11 @@
 CHANGELOG
 -- Magazino Child Theme for Glass City
 
+v3.0.1
+- Fixed social-media buttons overlapping site logo on small screen sizes.
+- Hopefully fixed post-format buttons not showing up as big as the green box they're contained in.
+- Removed tags from single post pages.
+
 v3 -- Nov 11, 2014
 - Added support for displaying post format (using Genericons) in post boxes on homepage and on archive pages.
 - Centered header logo image.

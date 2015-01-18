@@ -6,9 +6,9 @@ function enqueue_parent_theme_style() {
 }
 
 function enqueue_child_scripts() {
+	wp_enqueue_style( 'genericons', get_stylesheet_directory_uri().'/font/genericons.css');
 	wp_register_script( 'magazino_custom_js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ));
-	wp_enqueue_script( 'magazino_custom_js' );
-	wp_enqueue_style( 'genericons', get_stylesheet_directory_uri().'/font/genericons.css' );
+	wp_enqueue_script( 'magazino_custom_js' );	
 }
 
 add_action( 'wp_enqueue_scripts', 'enqueue_child_scripts');

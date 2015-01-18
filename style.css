@@ -5,7 +5,7 @@
  Author:       Crystal and Kayla
  Author URI:   http://github.com/guisers
  Template:     magazino
- Version:      3.0.0
+ Version:      1.0.0
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  magazino-child
 */
@@ -16,15 +16,6 @@
 #inner-header {
 	width: 100%;
 }
-
-#social-media {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	margin-top: 20px;
-	z-index: 200;
-}
-
 
 #site-heading {
     width: 100%;
@@ -43,6 +34,13 @@
 
 #site-logo img {
 	top: 0px;
+}
+
+#site-title {
+	float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
 }
 
 
@@ -82,6 +80,13 @@ article[id*=post-].post-box .entry-content {
 	bottom: 9px;
 	font-size: 25px;
 	line-height: 30px;
+	text-align: center;
+}
+
+.go-button span {
+	font-size: 25px;
+	vertical-align: inherit;
+	margin: inherit;
 }
 
 .post-box-img img {
@@ -90,7 +95,23 @@ article[id*=post-].post-box .entry-content {
 	filter: alpha(opacity=07); /* For IE8 and earlier */
 }
 
+/* SOCIAL MEDIA FIX */
+#social-media {
+	position: relative;
+	z-index: 200;
+}
 
+/* AUTHOR BIOS */
+.content-author-bio {
+	overflow: hidden;
+}
+.author-bio-img {
+	float: left;
+	padding-right: 10px;
+}
+.author-bio-info {
+	padding: 0 10px;
+}
 
 /* MOBILE STYLES */
 
@@ -121,6 +142,32 @@ article[id*=post-].post-box .entry-content {
 @media only screen and (max-width: 667px) {
 	#site-logo {
 		width: 100%;
+		margin-top: 25px;
+	}
+	.menu.nav-mobile {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		z-index: 400;
+	}
+	#search-box-wrap {
+		padding-top: 36px;
+	}
+	#social-media {
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		z-index: 401;
+	}
+	#social-media a {
+		box-shadow: none;
+		background-color: transparent!important;
+		padding-top: 6px;
+	}
+	#search-icon {
+		box-shadow: none;
+		height: 40px;
 	}
 }
 

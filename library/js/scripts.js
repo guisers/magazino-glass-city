@@ -45,6 +45,7 @@ jQuery(document).ready(function($){
 	
 	/* toggle search box */
 	$("#search-icon").on("click", function(){
+		$("body").scrollTop(0);
 		$("#search-box-wrap").slideToggle();
 	});
 	
@@ -53,6 +54,7 @@ jQuery(document).ready(function($){
 	});
 	
 
+	/* post box hovers */
 	$(".post-box").bind("mouseenter", function() {
 		$(this).find(".entry-content").fadeTo(400, 1);
 		$(this).find(".go-button a").fadeTo(400, 1);
@@ -64,5 +66,7 @@ jQuery(document).ready(function($){
 		$(this).find(".go-button a").fadeTo(400, 0);
 		$(this).find("img").fadeTo(400, 0.7);
 	});
+
+	document.getElementById("menu-icon").innerHTML = "<span class='genericon genericon-menu'></span>";
 
 });
