@@ -73,7 +73,7 @@ article[id*=post-].post-box .entry-content {
 .go-button a,
 .go-button a:visited {
 	z-index: 200;
-	display: none;
+	display:none;
 	width: 30px;
 	height: 30px;
 	right: 9px;
@@ -111,6 +111,12 @@ article[id*=post-].post-box .entry-content {
 }
 .author-bio-info {
 	padding: 0 10px;
+}
+
+/* SLIDER */
+.slides .slide-content {
+	right:0px;
+	bottom:0px;
 }
 
 /* MOBILE STYLES */
